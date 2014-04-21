@@ -32,7 +32,7 @@ gem 'friendly_id', '~> 4.0.10'# To use Jbuilder templates for JSON
 
 # Use unicorn as the app server
 gem 'unicorn'
-
+gem 'pry'
 # Deploy with Capistrano
 # gem 'capistrano'
 

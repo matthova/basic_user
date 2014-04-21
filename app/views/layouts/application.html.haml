@@ -6,6 +6,9 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-    -if current_user
-      = link_to("Hello, #{current_user.username}")
-    = yield
+    #header
+      = nav_bar
+    #main
+      = yield
+    #footer
+      = footer_text

@@ -1,0 +1,22 @@
+a{
+  text_decoration:none !important;
+  color:none;
+}
+
+#footer{
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:2em;
+    width:100%;
+    background:#999;
+}
+
+#footer a{
+  position:relative;
+  top:.5em;
+}
+
+.header_tab{
+  background:#333;
+}

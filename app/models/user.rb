@@ -5,8 +5,10 @@ class User < ActiveRecord::Base
   
   has_secure_password
   
-  attr_accessible :password, :password_confirmation, :username
+  attr_accessible :password, :password_confirmation, :username, :email
   
   validates :username, :uniqueness => true, :format => { :with => /^[a-zA-Z0-9_]+$/ }
+  validates_format_of :email, :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i
+  validates :email, :uniqueness => true
   
 end
