@@ -1,0 +1,21 @@
+#header{
+  background:#ccc;
+  height:100vh;
+}
+
+.home{
+  width: 13em;
+  height: 0;
+  padding-top: 3.6em;
+  overflow: hidden;
+  background: url("https://s3-us-west-2.amazonaws.com/matthova/studio+simplified-01.svg");
+	background-repeat: no-repeat;
+  text-align:center;
+  margin: 0 auto;
+  display:block;
+}
+
+.login_status{
+  display:block;
+  float:right;
+}

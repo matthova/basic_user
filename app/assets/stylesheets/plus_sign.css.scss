@@ -1,0 +1,41 @@
+/* Create a square menu icon any size, just change the first variable */
+$square-size: 300; /* (<-variable in pixels) */
+$smac_orange: #f1712f;
+
+.square{
+  display: inline-block;
+  width: #{$square-size}px;
+  height: #{$square-size}px;
+  background: #E28961;
+  border-radius:#{$square-size/32}px;
+  position:relative;
+  top:20px; /* Shift along X and Y as necessary */
+  left:20px;
+  transition-property:background;
+  transition-duration:500ms;
+}
+
+.square:hover{
+  background:$smac_orange;
+}
+
+.plus_sign{
+  position:absolute;
+  display: inline-block;
+  border-radius:#{$square-size/32}px;
+  background: #ccc;
+}
+
+#horizontal{
+  width: #{$square-size * .75}px;
+  height: #{$square-size / 7}px;
+  top:#{$square-size * 3 / 7}px;
+  left:#{$square-size/8}px;
+}
+
+#vertical{
+  width: #{$square-size / 7}px;
+  height: #{$square-size * .75}px;
+  top:#{$square-size / 7}px;
+  left:#{$square-size * 3 / 7}px;
+}

@@ -1,15 +1,24 @@
 a{
-  text_decoration:none !important;
-  color:none;
+  text-decoration:none;
+  color:#000;
+}
+
+a:visited{
+  color:#000;
+};
+
+#main{
+  background:#fff;
 }
 
 #footer{
-    position:fixed;
-    left:0px;
-    bottom:0px;
-    height:2em;
-    width:100%;
-    background:#999;
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:2em;
+  width:100%;
+  background:#ccc;
+  border:solid 1px #000;
 }
 
 #footer a{
@@ -17,6 +26,3 @@ a{
   top:.5em;
 }
 
-.header_tab{
-  background:#333;
-}

@@ -1,0 +1,39 @@
+/* Create a square menu icon any size, just change the first variable */
+$menu-size: 100; /* (<-variable in pixels) */
+
+.menu-box{
+  display: inline-block;
+  width: #{$menu-size}px;
+  height: #{$menu-size}px;
+  background: #000;
+  border-radius:#{$menu-size/16}px;
+  position:relative;
+  top:20px; /* Shift along X and Y as necessary */
+  left:20px;
+}
+
+.menu-line{
+  position:absolute;
+  display: inline-block;
+  width: #{$menu-size * .75}px;
+  height: #{$menu-size / 7}px;
+  border-radius:#{$menu-size/16}px;
+}
+
+#menu-line-1{
+  top:#{$menu-size/7}px;
+  left:#{$menu-size/8}px;
+  background: #F00;
+}
+
+#menu-line-2{
+  top:#{$menu-size * 2 / 7}px;
+  left:0px;
+  background: #FF0;
+}
+
+#menu-line-3{
+  top:#{$menu-size * 2 / 7}px;
+  left:0px;
+  background: #0F0;
+}
